@@ -51,13 +51,13 @@ header {
     font-family: 'Caveat', cursive;
     font-size: 4.5rem;
     white-space: nowrap;
-    animation: nameAni 1s;
+    animation: nameAni 2s;
 }
 .role {
     font-size: 1.8rem;
     color: var(--main-light-black);
     margin-bottom: 10px;
-    animation: roleAni 2s;
+    animation: roleAni 3s;
 }
 
 .links--icon {
@@ -73,11 +73,11 @@ header {
 }
 .links a:first-child{
     display: inline-block;
-    animation: linkAni1 2.5s;
+    animation: linkAni1 5s;
 }
 .links a:last-child{
     display: inline-block;
-    animation: linkAni2 2.5s;
+    animation: linkAni2 5s;
 }
 
 .arrow::after{
@@ -90,7 +90,7 @@ header {
     border-right: 3px solid rgba(0, 0, 0, 0.65);
     border-bottom: 3px solid rgba(0, 0, 0, 0.65);
     transform: rotate(45deg) translateX(-50%);
-    animation: arrowDown 1s infinite, arrowOnLoad 3s;
+    animation: arrowDown 1s infinite, arrowOnLoad 6s;
 }
 
 /*
@@ -215,23 +215,24 @@ ANIMATIONS
 
 @keyframes nameAni {
     0% { opacity: 0; transform: translateY(-1rem); }
+    50% { opacity: 0; transform: translateY(-1rem); }
     100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes roleAni {
     0% { opacity: 0; transform: translateY(1rem); }
-    20% { opacity: 0; transform: translateY(1rem); }
+    50% { opacity: 0; transform: translateY(1rem); }
     100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes linkAni1 {
     0% { opacity: 0; transform: translateX(-2rem); }
-    40% { opacity: 0; transform: translateX(-2rem); }
+    50% { opacity: 0; transform: translateX(-2rem); }
     100% { opacity: 1; transform: translateX(0); }
 }
 @keyframes linkAni2 {
     0% { opacity: 0; transform: translateX(2rem); }
-    40% { opacity: 0; transform: translateX(2rem); }
+    50% { opacity: 0; transform: translateX(2rem); }
     100% { opacity: 1; transform: translateX(0); }
 }
 
